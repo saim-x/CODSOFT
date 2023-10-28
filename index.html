@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saim- Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/media/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hide_menu()"></i>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href=" ">About</a>
+                        <a href=" ">Skills</a>
+                        <a href=" ">Projects</a>
+                        <a href=" ">Contact</a>
+
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show_menu()"></i>
+
+        </nav>
+        <div class="text_box">
+            <h3>
+                Hello World!
+            </h3>
+            <h1>I am M.Saim</h1>
+            <p>
+                <!-- I'm at an intermediate level in web development and graphic design, with over a year of focused learning and hands-on experience -->
+                Web-Devloper || Graphic Designer || CS Student
+
+            </p>
+            <a href="#section2">Learn more</a>
+        </div>
+    </section>
+    <section class="skills" id="section2">
+        <h1>Skills</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium, quod, eos alias quia beatae saepe
+            eligendi ut aliquid, minima accusamus corporis aliquam cupiditate quae?</p>
+        <div class="row">
+            <div class="skill-col">
+                <h3>Web-Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius expedita nemo illo cupiditate ut at
+                    quos totam molestiae nobis?</p>
+            </div>
+            <div class="skill-col">
+                <h3>Graphic Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius expedita nemo illo cupiditate ut at
+                    quos totam molestiae nobis?</p>
+            </div>
+            <div class="skill-col">
+                <h3>3D Artist</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius expedita nemo illo cupiditate ut at
+                    quos totam molestiae nobis?</p>
+            </div>
+        </div>
+        <a href="#section3">Learn more</a>
+    </section>
+    <section class="technologies" id="section3">
+        <h1>Technologies I'm familar with</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem animi eligendi sint quas natus quae consequuntur ea, voluptate similique.</p>
+        <div class="row">
+            <div class="technologies_col">
+                <img src="/media/pic3.png" alt="">
+                <div class="layer">
+                    <h3>
+                        HTML
+                    </h3>
+                </div>
+            </div>
+            <div class="technologies_col">
+                <img src="/media/pic4.png" alt="">
+                <div class="layer">
+                    <h3>
+                        C
+                    </h3>
+                </div>
+            </div>
+            <div class="technologies_col">
+                <img src="/media/pic5.png" alt="">
+                <div class="layer">
+                    <h3>
+                        CSS
+                    </h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="technologies_col">
+                <img src="/media/pic6.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Python
+                    </h3>
+                </div>
+            </div>
+            <div class="technologies_col">
+                <img src="/media/pic7.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Photoshop
+                    </h3>
+                </div>
+            </div>
+            <div class="technologies_col">
+                <img src="/media/pic8.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Blender
+                    </h3>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <a href="#section4">Learn more</a>
+        
+        
+        
+    </section>
+</body>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function show_menu() {
+        navLinks.style.right = "0";
+    }
+    function hide_menu() {
+        navLinks.style.right = "-200px";
+    }
+    
+
+</script>
+
+</html>
