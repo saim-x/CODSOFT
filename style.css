@@ -255,7 +255,54 @@ nav .fa {
     .row {
         flex-direction: column;
     }
+    .projects .project {
+        width: 80%; 
+        margin: 20px auto;
+        padding: 15px; 
+    }
+
+    .projects .project img {
+        max-width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .projects .project h3 {
+        font-size: 18px; 
+    }
+
+    .projects a {
+        padding: 10px 20px; 
+        font-size: 12px; 
+    }
 }
+@media screen and (max-width: 700px) {
+    .technologies {
+        padding-top: 30px; /* Adjusted padding for smaller screens */
+        padding-bottom: 30px; /* Adjusted padding for smaller screens */
+    }
+
+    .technologies .technologies_col {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 20px auto;
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .technologies .technologies_col img {
+        width: 60%; /* Adjusted image width for smaller screens */
+        max-width: 100px; /* Ensuring images scale properly */
+        margin-bottom: 10px;
+    }
+
+    .technologies .layer h3 {
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .technologies a {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+}
+
 
 .skills {
     padding-top: 50px;
@@ -285,58 +332,64 @@ nav .fa {
 }
 
 
-.technologies{
-    width: 80%;
+.technologies {
     margin: auto;
     text-align: center;
     padding-top: 50px;
-    padding-top: 50px;
     min-height: 100vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(media/pic1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-
+    padding-bottom: 50px; /* Added padding at the bottom for spacing */
 }
-.technologies h1{
+
+.technologies h1 {
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #ffffff;
 }
 
-.technologies p{
+.technologies p {
     color: white;
+    margin-bottom: 20px; /* Added margin at the bottom of the paragraph */
 }
-.technologies_col{
-    flex-basis: 32%;
-    border-radius: 12%;
-    margin-bottom: 05%;
+
+.technologies_col {
+    width: 25%; 
+    margin: 20px auto;
     position: relative;
     overflow: hidden;
     transition: 0.5s;
-    
-
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
-.technologies_col img{
+
+.technologies_col img {
     width: 100%;
-    height: 112px;
-    width: 112px;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%; 
+    max-width: 100px;
 }
 
-.layer h3{
+.layer h3 {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #ffffff;
-    
+    margin-bottom: 5px;
 }
-.technologies_col:hover{
+
+.technologies_col:hover {
     box-shadow: 0 0 20px 10px rgba(212, 0, 255, 0.2);
-    border: 2px solid #A44CD3;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1);
     transform: translate(0px, -10px);
+    border: 1px solid #A44CD3;
 }
 
 .technologies a {
@@ -349,9 +402,10 @@ nav .fa {
     border-radius: 30px;
     transition: 0.5s;
     cursor: pointer;
+    margin-top: 20px;
 }
-.technologies a:hover {
 
+.technologies a:hover {
     border: 1px solid #ffffff;
     background: transparent;
     box-shadow: 0 0 20px 10px rgba(204, 0, 255, 0.699);
@@ -361,3 +415,230 @@ nav .fa {
 span{
     color: #A44CD3;
 }
+
+.projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-top: 50px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(media/pic2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.projects h1 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.projects p {
+    color: white;
+}
+
+.project {
+    width: 30%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 1vh;
+}
+
+.project img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.project p {
+    color: white;
+}
+
+.project:hover {
+    box-shadow: 0 0 20px 10px rgba(212, 0, 255, 0.2);
+    border: 2px solid #A44CD3;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(0px, -10px);
+}
+
+.projects a {
+    display: inline-block;
+    background: #A44CD3;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projects a:hover {
+    border: 1px solid #ffffff;
+    background: transparent;
+    box-shadow: 0 0 20px 3px rgba(204, 0, 255, 0.699);
+    transform: translate(0px, -10px);
+}
+
+
+.contact {
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-top: 50px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(media/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.contact h1 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+
+.social-links img {
+    width: 50px; /* Adjusted size of social icons */
+    height: 50px; /* Adjusted size of social icons */
+    border-radius: 50%;
+}
+
+
+
+.contact .social-links img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    transition: transform 0.3s ease; /* Added transition property */
+}
+
+.contact .social-links img:hover {
+    transform: scale(1.2);
+    border: 1px solid #ffffff;
+    background: transparent;
+    box-shadow: 0 0 20px 3px rgba(204, 0, 255, 0.699);
+    transform: translate(0px, -10px);
+    
+    
+}
+.learnmorebtn {
+    display: inline-block;
+    background: #A44CD3;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+}
+
+.learnmorebtn:hover {
+    border: 1px solid #ffffff;
+    background: transparent;
+    box-shadow: 0 0 20px 10px rgba(204, 0, 255, 0.699);
+    transform: translate(0px, -10px);
+}
+
+.learnmorebtn:hover::after {
+    content: "Learn More";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #A44CD3;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+}
+
+
+
+.footer {
+    background-color: #0F121B;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-logo img {
+    width: 80px;
+}
+
+.footer .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #A44CD3;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
