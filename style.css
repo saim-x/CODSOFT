@@ -81,7 +81,7 @@ nav img {
 }
 
 .text_box h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     word-spacing: 0.5vh;
@@ -97,7 +97,7 @@ nav img {
 
 .text_box p {
     margin: 10px 0 40px;
-    font-size: 18px;
+    font-size: 28px;
     color: #fff;
 }
 
@@ -356,4 +356,8 @@ nav .fa {
     background: transparent;
     box-shadow: 0 0 20px 10px rgba(204, 0, 255, 0.699);
     transform: translate(0px, -10px);
+}
+
+span{
+    color: #A44CD3;
 }

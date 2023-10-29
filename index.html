@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
-    
+
 
 </head>
 
@@ -46,7 +46,7 @@
             <h1>I am M.Saim</h1>
             <p>
                 <!-- I'm at an intermediate level in web development and graphic design, with over a year of focused learning and hands-on experience -->
-                Web-Devloper || Graphic Designer || CS Student
+                I am <span class="auto-type"></span>
 
             </p>
             <a href="#section2">Learn more</a>
@@ -77,7 +77,8 @@
     </section>
     <section class="technologies" id="section3">
         <h1>Technologies I'm familar with</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem animi eligendi sint quas natus quae consequuntur ea, voluptate similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem animi eligendi sint quas natus quae
+            consequuntur ea, voluptate similique.</p>
         <div class="row">
             <div class="technologies_col">
                 <img src="/media/pic3.png" alt="">
@@ -103,7 +104,7 @@
                     </h3>
                 </div>
             </div>
-            
+
         </div>
         <div class="row">
             <div class="technologies_col">
@@ -131,15 +132,24 @@
                 </div>
             </div>
 
-            
+
         </div>
-        
+
         <a href="#section4">Learn more</a>
-        
-        
-        
+
+
+
     </section>
 </body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.auto-type', {
+        strings: ['Web-Developer', 'Graphic Designer', 'CS Student'],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true
+    });
+</script>
 <script>
     var navLinks = document.getElementById("navLinks");
     function show_menu() {
@@ -148,7 +158,7 @@
     function hide_menu() {
         navLinks.style.right = "-200px";
     }
-    
+
 
 </script>
 
